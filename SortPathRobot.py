@@ -50,7 +50,7 @@ args = vars(ap.parse_args())
 
 
 # define the lower and upper boundaries of the "green"
-# ball in the HSV color space, then initialize the
+# object in the HSV color space, then initialize the
 # list of tracked points
 greenLower = (29, 86, 6)
 greenUpper = (64, 255, 255)
@@ -70,7 +70,7 @@ rawCapture = PiRGBArray(vs, size = (640, 480))
 # allow the camera or video file to warm up
 time.sleep(2.0)
 # define the lower and upper boundaries of the "green"
-# ball in the HSV color space, then initialize the
+# object in the HSV color space, then initialize the
 # list of tracked points
 greenLower = (29, 86, 6)
 greenUpper = (64, 255, 255)
@@ -346,7 +346,7 @@ def Explore(start, goal):
 
             
         # find contours in the mask and initialize the current
-            # (x, y) center of the ball
+            # (x, y) center of the object
             ObjectColour(maskGreen, 'green', frame, map, pathList, spinTime )
             ObjectColour(maskBlue, 'blue', frame, map, pathList, spinTime)
             ObjectColour(maskRed, 'red', frame, map, pathList, spinTime)
